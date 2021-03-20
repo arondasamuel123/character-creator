@@ -4,7 +4,6 @@
 }
 
 .maxWidthWrapper {
-  max-width: 1024px;
 }
 
 .header {
@@ -26,11 +25,14 @@
 }
 
 .characterWrapper {
-  position:fixed;
-  height: 700px;
-  top: 0;
-  right:400px;
-  
+  /* This works fine on Mozilla Firefox*/
+  min-height:500px;
+  /* I had to add this inorder for the svg to show up on Chrome*/
+  width: 50%;
+  position: fixed;
+  top:10%;
+  left:50%;
+  margin-bottom: 5px;
 }
 
 .controlColumn {
